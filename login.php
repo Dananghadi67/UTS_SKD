@@ -68,31 +68,26 @@
                             <div class="col-md-12">
                                 <div class="p-5">
                                     <div class="mb-5">
-                                        <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                                        <center>
+                                            <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                                        </center>
                                     </div>
 
-                                    <h6 class="h5 mb-0">Welcome back!</h6>
-                                    <p class="text-muted mt-2 mb-5">Enter your username and password to access
-                                        admin panel.</p>
-                                    <?php if (isset($_GET['error'])) { ?>
-                                        <div class="alert alert-danger d-flex align-items-center" role="alert">
-                                            <div>
-                                                Username atau Password salah!
-                                            </div>
-                                        </div>
-                                    <?php } ?>
+                                    <h6 class="h5 mb-0">WELCOME :) </h6>
+                                    <p class="text-muted mt-2 mb-5">Selamat Datang Siwa Baru</p>
                                     <form method="POST" action="loginProcess.php">
                                         <form method="POST" action="dash.php">
                                             <div class="form-group">
                                                 <label for="username">Username</label>
-                                                <input type="text" class="form-control" id="username" name="username" required>
+                                                <input type="text" class="form-control" placeholder="Masukkan Username" id="username" name="username" required>
                                             </div>
                                             <div class="form-group mb-5">
                                                 <label for="password">Password</label>
-                                                <input type="password" class="form-control" id="password" name="password" required>
+                                                <input type="password" class="form-control" placeholder="Masukkan Password" id="password" name="password" required>
                                             </div>
                                             <button type="submit" class="btn btn-theme">Login</button>
                                         </form>
+                                    </form>
                                 </div>
                             </div>
 

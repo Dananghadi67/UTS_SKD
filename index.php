@@ -67,43 +67,35 @@
                         <div class="row no-gutters">
                             <div class="col-md-12">
                                 <div class="p-5">
-                                    <div class="mb-5">
-                                        <h3 class="h4 font-weight-bold text-theme">Register</h3>
+                                    <div class="mb-2">
+                                        <center>
+                                            <h3 class="h2 font-weight-bold text-theme">Register</h3>
+                                        </center>
                                     </div>
-
-                                    <h6 class="h5 mb-0">Welcome!</h6>
-                                    <p class="text-muted mt-2 mb-5">Enter your username, password, and role to
-                                        create an account.</p>
-                                    <?php if (isset($_GET['error'])) { ?>
-                                        <div class="alert alert-danger d-flex align-items-center" role="alert">
-                                            <div>
-                                                Username sudah digunakan!
-                                            </div>
-                                        </div>
-                                    <?php } ?>
+                                    <h6 class="h5 mb-0">WELCOME !!</h6>
+                                    <p class="text-muted mt-2 mb-5">Pendaftaran Siswa Baru 2023</p>
                                     <form method="POST" action="registerProcess.php">
                                         <div class="form-group">
                                             <label for="fullname">Fullname</label>
-                                            <input type="text" class="form-control" id="fullname" name="fullname" required>
+                                            <input type="text" class="form-control" placeholder="Masukkan Nama Lengkap" id="fullname" name="fullname" required>
                                         </div>
-
                                         <div class="form-group">
                                             <label for="username">Username</label>
-                                            <input type="text" class="form-control" id="username" name="username" required>
+                                            <input type="text" class="form-control" placeholder="Masukkan Username" id="username" name="username" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" name="email" required>
+                                            <input type="email" class="form-control" placeholder="Example@gmail.com" id="email" name="email" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="password">Password</label>
-                                            <input type="password" class="form-control" id="password" name="password" required>
+                                            <input type="password" class="form-control" placeholder="Masukkan Password" id="password" name="password" required>
                                         </div>
                                         <div class="form-group mb-5">
-                                            <label for="role">Role</label>
-                                            <select class="form-select " id="role" name="role">
-                                                <option value="admin" selected>Admin</option>
-                                                <option value="staff">Staff</option>
+                                            <label for="gender">Gender</label>
+                                            <select class="form-select " id="gender" name="gender">
+                                                <option value="Laki - Laki" selected>Laki - Laki</option>
+                                                <option value="Perempuan">Perempuan</option>
                                             </select>
                                         </div>
                                         <button type="submit" class="btn btn-theme">Register</button>

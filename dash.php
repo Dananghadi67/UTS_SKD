@@ -87,7 +87,7 @@ if (!isset($_SESSION['cust_id'])) {
                                     </button>
                                     <button class="btn btn-navbar" type="button" data-widget="navbar-search">
                                         <i class="fas fa-times"></i>
-                                    </button>
+                                    </button>54444444444
                                 </div>
                             </div>
                         </form>
@@ -135,7 +135,7 @@ if (!isset($_SESSION['cust_id'])) {
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+                        with font-awesome or any other icon font library -->
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -183,10 +183,11 @@ if (!isset($_SESSION['cust_id'])) {
                                     <tr>
                                         <th>ID</th>
                                         <th>Fullname</th>
-                                        <th>Email</th>
                                         <th>Username</th>
+                                        <th>Email</th>
                                         <th>Password</th>
-                                        <th>role</th>
+                                        <th>Gender</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -196,17 +197,16 @@ if (!isset($_SESSION['cust_id'])) {
                                     <tr>
                                         <td><?php echo $no++ ?></td>
                                         <td><?php echo $result['fullname'] ?></td>
-                                        <td><?php echo $result['email'] ?></td>
                                         <td><?php echo $result['username'] ?></td>
+                                        <td><?php echo $result['email'] ?></td>
                                         <td><?php echo $show_pass[0]; ?></td>
-                                        <td><?php echo $result['role'] ?></td>
-
+                                        <td><?php echo $result['gender'] ?></td>
                                     </tr>
                                 </tbody>
                             </table>
                             <!-- /.card-body -->
                             <div class="modal-footer">
-                                <a type="button" class="btn btn-secondary" data-bs-dismiss="modal" href="index.php">Tambah User</a>
+                                <a type="button" class="btn btn-secondary" data-bs-dismiss="modal" href="index.php">Exit</a>
                             </div>
                         </div>
                         <!-- /Tabel Data -->
